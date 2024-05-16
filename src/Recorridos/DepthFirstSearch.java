@@ -17,12 +17,12 @@ public class DepthFirstSearch <T>{
     private boolean tieneCiclo;
     //tener un grafo como atributo?
     /*para el ejercicio 5:*/
-    private Map<Integer, List<List<Integer>>> caminos; // Para almacenar los caminos desde cada vértice hasta el objetivo
+   // private Map<Integer, List<List<Integer>>> caminos; // Para almacenar los caminos desde cada vértice hasta el objetivo
 
     public DepthFirstSearch() {
         this.colores = new HashMap<Integer, String>();
         this.tieneCiclo=false;
-        this.caminos=new HashMap<>();
+       // this.caminos=new HashMap<>();
     }
 
     public void dfs(Grafo<T> g){
@@ -64,7 +64,7 @@ con todos los vértices a partir de los cuales exista un camino en G que termine
 
     public List<List<Integer>> buscarCaminosHastaV(Grafo<T> g, int verticeObjetivo) {
         this.colores.clear(); // Limpiar los colores previos
-        this.caminos.clear(); // Limpiar los caminos previos
+       // this.caminos.clear(); // Limpiar los caminos previos
         List<List<Integer>> resultado = new ArrayList<List<Integer>>();
 
         // Marcar todos los vértices como blancos
